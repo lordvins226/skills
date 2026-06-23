@@ -29,32 +29,3 @@ Verify the link resolves:
 readlink ~/.claude/skills/quoteforge-cards
 test -e ~/.claude/skills/quoteforge-cards/SKILL.md && echo ok
 ```
-
-# Creating a Basic Skill
-
-Skills require minimal setup — just a folder containing a `SKILL.md` file with
-YAML frontmatter and instructions:
-
-```markdown
----
-name: my-skill-name
-description: A clear description of what this skill does and when to use it
----
-
-# My Skill Name
-
-[Add your instructions here that Claude will follow when this skill is active]
-
-## Examples
-- Example usage 1
-- Example usage 2
-```
-
-The frontmatter requires only two fields:
-- `name` - A unique identifier for your skill (lowercase, hyphens for spaces)
-- `description` - A complete description of what the skill does and when to use it
-
-Optional bundled resources live alongside `SKILL.md`: `references/` (docs loaded
-on demand), `scripts/` (executable helpers), `assets/` (files used in output),
-and `evals/` (test prompts). Eval run artifacts under `*-workspace/` are
-git-ignored.
