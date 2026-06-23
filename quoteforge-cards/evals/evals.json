@@ -1,0 +1,26 @@
+{
+  "skill_name": "quoteforge-cards",
+  "evals": [
+    {
+      "id": 0,
+      "name": "single-quote-card",
+      "prompt": "Make me a Twitter/X card for this quote: \"Premature optimization is the root of all evil.\" Attribute it to Donald Knuth. I want it to look clean and a bit techy. Save the PNG so I can look at it.",
+      "expected_output": "A rendered PNG of a single card sized for Twitter (1200x675), using a dark/techy theme, containing the quote and the attribution.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "name": "linkedin-carousel-deck",
+      "prompt": "I need a LinkedIn carousel that summarizes 3 tips for better code reviews: keep PRs small, review within a day, and comment on the why not just the what. Make it a square carousel with a title slide. Render the slides.",
+      "expected_output": "A deck JSON with a square size and ~4 slides (title + 3 tips) rendered to numbered PNGs plus a ZIP.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "instagram-image-card",
+      "prompt": "Turn this into an Instagram post image: a bold headline that says \"Sunset deploys\" with a small visual at the top. Use the file at ./assets/logo.svg as the image. Save the PNG.",
+      "expected_output": "A square or portrait Instagram card with an image block at the top (the provided logo) and a bold headline below it.",
+      "files": ["assets/logo.svg"]
+    }
+  ]
+}
