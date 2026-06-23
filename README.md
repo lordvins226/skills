@@ -1,20 +1,16 @@
-# Skills
+# skills
 
-> **Note:** This repository is a personal collection of skills for Claude. For
-> information about the Agent Skills standard, see [agentskills.io](http://agentskills.io).
+Personal collection of [Claude](https://www.anthropic.com/claude-code) skills.
+Each top-level directory is one skill: a `SKILL.md` (instructions + trigger
+description) plus any `references/`, `scripts/`, or `assets/` it needs.
 
-# Skills
+## Skills
 
-Skills are folders of instructions, scripts, and resources that Claude loads
-dynamically to improve performance on specialized tasks. They teach Claude how
-to accomplish particular objectives consistently — here, turning text into
-rendered graphics with a CLI.
+| Skill | What it does |
+|-------|--------------|
+| [`quoteforge-cards`](quoteforge-cards/) | Turn text into polished images and multi-slide decks (PNG) with [QuoteForge](https://github.com/lordvins226/quoteforge) — quote cards, carousels, slides, blog/OG headers, article covers, banners. Installs the CLI if needed, authors the JSON, renders, and shows the result. |
 
-# Skill Sets
-
-- [./quoteforge-cards](./quoteforge-cards): Turn text into polished images and multi-slide decks (PNG) with [QuoteForge](https://github.com/lordvins226/quoteforge) — quote cards, carousels, slides, blog/OG headers, article covers, and banners. Installs the CLI if needed, authors the JSON, renders, and shows the result.
-
-# Try in Claude Code
+## Installing
 
 Claude Code discovers skills under `~/.claude/skills/`. Symlink a skill there so
 edits in this repo are picked up live:
